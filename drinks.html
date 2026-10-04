@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Drinks & Flavors - ZIP ZIP</title>
+  <meta name="description" content="Explore all 27+ cold-pressed fruit juices, flavored drinks, sparkling sodas, and signature ZIP ZIP creations.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥤</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-logo-badge">⚡</div>
+          <span class="brand-logo-text">ZIP ZIP</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="drinks.html" class="nav-link active">Drinks</a></li>
+          <li><a href="index.html#flavors" class="nav-link">Flavors</a></li>
+          <li><a href="index.html#ingredients" class="nav-link">Ingredients</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="index.html#combos" class="nav-link">Offers</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="drinks.html" class="btn-search-trigger" title="Search Drinks">🔍</a>
+          <button class="btn-cart-trigger" title="View Cart">
+            🛒
+            <span class="cart-count-badge">0</span>
+          </button>
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="brand-logo" style="margin-bottom:10px;">
+      <div class="brand-logo-badge">⚡</div>
+      <span class="brand-logo-text">ZIP ZIP</span>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="drinks.html" class="mobile-nav-link active">Drinks</a>
+      <a href="index.html#flavors" class="mobile-nav-link">Flavors</a>
+      <a href="index.html#ingredients" class="mobile-nav-link">Ingredients</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="index.html#combos" class="mobile-nav-link">Special Offers</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="cart.html" class="mobile-nav-link">Cart & Checkout</a>
+    </div>
+  </div>
+  <div class="cart-drawer-overlay" id="mobileOverlay"></div>
+
+  <!-- ==================== CATALOG HEADER ==================== -->
+  <section class="catalog-header">
+    <div class="container">
+      <span class="section-tag">Cold & Bottled Daily</span>
+      <h1 class="section-title">The Complete <span class="highlight">ZIP ZIP</span> Beverage Menu</h1>
+      <p class="section-subtitle">27 mouthwatering cold-pressed juices, flavored elixirs, effervescent sodas, and party specials.</p>
+    </div>
+  </section>
+
+  <!-- ==================== CATALOG FILTER & GRID ==================== -->
+  <section style="padding-bottom:100px;">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="catalog-filter-bar">
+        <div class="catalog-search-wrap">
+          <span>🔍</span>
+          <input type="text" id="catalogSearchInput" class="catalog-search-input" placeholder="Search by name, fruit (Mango, Berry, Lemon), or mood...">
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <label style="font-weight:700; font-size:0.9rem; color:var(--text-muted);">Sort By:</label>
+          <select id="catalogSortSelect" class="catalog-sort-select">
+            <option value="featured">✨ Featured Best</option>
+            <option value="price-low">💰 Price: Low to High</option>
+            <option value="price-high">💎 Price: High to Low</option>
+            <option value="rating">★ Highest Customer Rating</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-tabs" style="margin-bottom:36px;">
+        <button class="cat-tab-btn catalog-tab-btn active" data-category="all">🌈 All Drinks (27)</button>
+        <button class="cat-tab-btn catalog-tab-btn" data-category="fresh-juice">🍊 Fresh Fruit Juices (8)</button>
+        <button class="cat-tab-btn catalog-tab-btn" data-category="flavored-juice">🍹 Flavored Juices (6)</button>
+        <button class="cat-tab-btn catalog-tab-btn" data-category="sparkling-soda">🫧 Sparkling Sodas (7)</button>
+        <button class="cat-tab-btn catalog-tab-btn" data-category="special-drinks">⚡ Special Drinks (6)</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="products-grid" id="allDrinksGrid">
+        <!-- Dynamically rendered via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color:#fff;">
+            <div class="brand-logo-badge">⚡</div>
+            <span class="brand-logo-text">ZIP ZIP</span>
+          </div>
+          <p>The freshest, bubbliest, and most colorful beverage brand on the planet. Cold-pressed with real fruit love, natural spring water, and botanical fizz.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Drink Categories</h4>
+          <ul class="footer-nav-list">
+            <li><a href="drinks.html">Fresh Fruit Juices</a></li>
+            <li><a href="drinks.html">Flavored Juices</a></li>
+            <li><a href="drinks.html">Sparkling Sodas</a></li>
+            <li><a href="drinks.html">Special ZIP Drinks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Store Locator</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Customer Care</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span>+91 (800) 947-9470</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <span>hello@zipzipdrinks.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 ZIP ZIP Beverages Inc. All fruit rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SLIDE-OUT CART DRAWER ==================== -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3><span>🛒</span> Your Thirst Cart</h3>
+      <button class="btn-close-cart" id="btnCartClose">✕</button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <span class="subtotal-val" id="cartDrawerSubtotal">₹0</span>
+      </div>
+      <a href="cart.html" class="btn btn-primary" style="width:100%; margin-bottom:10px;">Proceed to Checkout ➔</a>
+      <button class="btn btn-secondary btn-sm" style="width:100%;" onclick="document.getElementById('cartOverlay').click();">Keep Exploring Drinks</button>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

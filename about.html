@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - The ZIP ZIP Story</title>
+  <meta name="description" content="Discover how ZIP ZIP revolutionized beverages with cold-pressed real fruits, zero artificial additives, and bubbly joy.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥤</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-logo-badge">⚡</div>
+          <span class="brand-logo-text">ZIP ZIP</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="drinks.html" class="nav-link">Drinks</a></li>
+          <li><a href="index.html#flavors" class="nav-link">Flavors</a></li>
+          <li><a href="index.html#ingredients" class="nav-link">Ingredients</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="index.html#combos" class="nav-link">Offers</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="drinks.html" class="btn-search-trigger" title="Search Drinks">🔍</a>
+          <button class="btn-cart-trigger" title="View Cart">
+            🛒
+            <span class="cart-count-badge">0</span>
+          </button>
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="brand-logo" style="margin-bottom:10px;">
+      <div class="brand-logo-badge">⚡</div>
+      <span class="brand-logo-text">ZIP ZIP</span>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="drinks.html" class="mobile-nav-link">Drinks</a>
+      <a href="index.html#flavors" class="mobile-nav-link">Flavors</a>
+      <a href="index.html#ingredients" class="mobile-nav-link">Ingredients</a>
+      <a href="about.html" class="mobile-nav-link active">About Us</a>
+      <a href="index.html#combos" class="mobile-nav-link">Special Offers</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="cart.html" class="mobile-nav-link">Cart & Checkout</a>
+    </div>
+  </div>
+  <div class="cart-drawer-overlay" id="mobileOverlay"></div>
+
+  <!-- ==================== ABOUT HERO ==================== -->
+  <section class="catalog-header" style="padding-bottom:20px;">
+    <div class="container">
+      <span class="section-tag">Our Mission & Flavor</span>
+      <h1 class="section-title">The Story Behind <span class="highlight">ZIP ZIP</span></h1>
+      <p class="section-subtitle" style="max-width:720px; margin:0 auto;">
+        We got tired of overly sweet synthetic sodas and dull watered-down juices. So we set out on a colorful mission: bring authentic orchard freshness together with playful fizz.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== STORY SECTION ==================== -->
+  <section style="padding:60px 0 100px;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:center; margin-bottom:80px;">
+        <div>
+          <span class="section-tag">Born in Sunlit Orchards</span>
+          <h2 style="font-size:2.4rem; margin-bottom:20px;">From Tree Branch to Chilled Bottle in Under 24 Hours</h2>
+          <p style="color:var(--text-muted); line-height:1.7; margin-bottom:16px;">
+            ZIP ZIP was founded by beverage artisans, fruit farmers, and flavor obsessives who believed that real fruit doesn't need artificial makeup. Our cold-press facilities are located right at the edge of verified sustainable orchards across Ratnagiri, Mahabaleshwar, Nagpur, and the Himalayan foothills.
+          </p>
+          <p style="color:var(--text-muted); line-height:1.7; margin-bottom:24px;">
+            Instead of boiling fruit into lifeless concentrates, we utilize gentle cold hydraulic pressure and High-Pressure Processing (HPP) to preserve cellular vitamins, crisp fruit aromas, and vibrant natural hues.
+          </p>
+          <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <div style="background:#FFF1E6; padding:16px 22px; border-radius:16px; border:1px solid rgba(255,123,0,0.2);">
+              <div style="font-family:'Fredoka', cursive; font-size:1.8rem; font-weight:700; color:#FF7B00;">100%</div>
+              <div style="font-size:0.85rem; font-weight:700; color:var(--dark-charcoal);">Pure Real Fruit</div>
+            </div>
+            <div style="background:#FFEAEF; padding:16px 22px; border-radius:16px; border:1px solid rgba(255,42,109,0.2);">
+              <div style="font-family:'Fredoka', cursive; font-size:1.8rem; font-weight:700; color:#FF2A6D;">0%</div>
+              <div style="font-size:0.85rem; font-weight:700; color:var(--dark-charcoal);">Chemical Preservatives</div>
+            </div>
+            <div style="background:#EBF9F5; padding:16px 22px; border-radius:16px; border:1px solid rgba(46,196,182,0.2);">
+              <div style="font-family:'Fredoka', cursive; font-size:1.8rem; font-weight:700; color:#2EC4B6;">Eco-Safe</div>
+              <div style="font-size:0.85rem; font-weight:700; color:var(--dark-charcoal);">Infinitely Recyclable</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#FFFDF9; border-radius:var(--radius-lg); padding:40px; border:1px solid #ECEEF3; box-shadow:var(--card-shadow); text-align:center;">
+          <div style="font-size:5rem; margin-bottom:20px; animation:floatSlow 4s ease-in-out infinite;">🥭🍹✨</div>
+          <h3 style="font-size:1.8rem; margin-bottom:12px;">The ZIP ZIP Promise</h3>
+          <p style="color:var(--text-muted); font-size:1rem; line-height:1.6; margin-bottom:24px;">
+            "If it isn't plucked from soil, sun, and rain, you won't find it in our bottle. We promise unmatched vitality, infectious smiles, and thirst-slaying bliss in every sip."
+          </p>
+          <div style="font-weight:800; color:var(--primary);">The ZIP ZIP Master Blenders Team</div>
+        </div>
+      </div>
+
+      <!-- The 5-Step Journey -->
+      <div class="section-header">
+        <span class="section-tag">Cold Crafted Process</span>
+        <h2 class="section-title">How We Make the Magic Happen</h2>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:80px;">
+        <div class="feature-card" style="text-align:center; padding:30px 20px;">
+          <div style="font-size:2.8rem; margin-bottom:12px;">🌳</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">1. Hand-Pick</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Harvested early in the morning when fruit sugar and hydration are peak.</p>
+        </div>
+        <div class="feature-card" style="text-align:center; padding:30px 20px;">
+          <div style="font-size:2.8rem; margin-bottom:12px;">❄️</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">2. Cold-Press</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Gentle hydraulic crushing with zero heat to safeguard live enzymes.</p>
+        </div>
+        <div class="feature-card" style="text-align:center; padding:30px 20px;">
+          <div style="font-size:2.8rem; margin-bottom:12px;">🧪</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">3. Botanical Blend</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Infused with natural herbs, spearmint, lime zest, or fine champagne bubbles.</p>
+        </div>
+        <div class="feature-card" style="text-align:center; padding:30px 20px;">
+          <div style="font-size:2.8rem; margin-bottom:12px;">🧊</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">4. Deep Chill</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Brought to a brisk 3°C instantly to lock in crisp effervescence.</p>
+        </div>
+        <div class="feature-card" style="text-align:center; padding:30px 20px;">
+          <div style="font-size:2.8rem; margin-bottom:12px;">⚡</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">5. ZIP Delivery</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Dispatched in thermal coolers right to your door in 2 hours.</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; background:linear-gradient(135deg, #FF2A6D, #FF7B00); border-radius:var(--radius-lg); padding:50px 30px; color:#fff;">
+        <h2 style="font-size:2.4rem; color:#fff; margin-bottom:14px;">Ready to Taste the Fun?</h2>
+        <p style="font-size:1.1rem; opacity:0.95; max-width:600px; margin:0 auto 28px;">
+          Dive into our lineup of 27 vibrant drinks and treat yourself to the freshest quench of your life.
+        </p>
+        <a href="drinks.html" class="btn btn-secondary btn-lg" style="background:#fff; color:var(--primary); font-weight:800;">
+          Order Your Cold Drinks Now 🍹
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color:#fff;">
+            <div class="brand-logo-badge">⚡</div>
+            <span class="brand-logo-text">ZIP ZIP</span>
+          </div>
+          <p>The freshest, bubbliest, and most colorful beverage brand on the planet. Cold-pressed with real fruit love, natural spring water, and botanical fizz.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Drink Categories</h4>
+          <ul class="footer-nav-list">
+            <li><a href="drinks.html">Fresh Fruit Juices</a></li>
+            <li><a href="drinks.html">Flavored Juices</a></li>
+            <li><a href="drinks.html">Sparkling Sodas</a></li>
+            <li><a href="drinks.html">Special ZIP Drinks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="drinks.html">All Drinks</a></li>
+            <li><a href="contact.html">Store Locator</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Customer Care</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span>+91 (800) 947-9470</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <span>hello@zipzipdrinks.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 ZIP ZIP Beverages Inc. All fruit rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SLIDE-OUT CART DRAWER ==================== -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3><span>🛒</span> Your Thirst Cart</h3>
+      <button class="btn-close-cart" id="btnCartClose">✕</button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <span class="subtotal-val" id="cartDrawerSubtotal">₹0</span>
+      </div>
+      <a href="cart.html" class="btn btn-primary" style="width:100%; margin-bottom:10px;">Proceed to Checkout ➔</a>
+      <button class="btn btn-secondary btn-sm" style="width:100%;" onclick="document.getElementById('cartOverlay').click();">Keep Exploring Drinks</button>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
